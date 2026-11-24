@@ -33,6 +33,6 @@ public final class InstanceParser {
     public static Instance parse(Scanner sc, String name) {
         int nJobs = readInt(sc, "nombre de jobs");
         int nMachines = readInt(sc, "nombre de machines");
-        
+        int[][]    
     }
 }
