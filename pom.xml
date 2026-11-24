@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>projet.ccg</groupId>
+  <artifactId>IA-CCG_complexite_comb_graphes</artifactId>
+  <version>1.0-SNAPSHOT</version>
+
+  <properties>
+      <maven.compiler.source>17</maven.compiler.source>
+      <maven.compiler.target>17</maven.compiler.target>
+  </properties>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>3.7.0</version>
+        <configuration>
+          <mainClass>projet.ccg.Main</mainClass>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+  <dependencies>
+    <!-- OR-Tools (CP-SAT) -->
+    <dependency>
+      <groupId>com.google.ortools</groupId>
+      <artifactId>ortools-java</artifactId>
+      <version>9.15.6755</version>
+    </dependency>
+
+    <!-- Choco-solver -->
+    <dependency>
+      <groupId>org.choco-solver</groupId>
+      <artifactId>choco-solver</artifactId>
+      <version>4.10.17</version>
+    </dependency>
+  </dependencies>
+
+</project>
